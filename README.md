@@ -95,13 +95,19 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
         <p>ttk.Notebook organizes the interface into tabs (e.g., "Add Entry" and "Analysis").</p>
         <p>Grid Layout: Ensures the layout is responsive and centered.</p>
 </li>
+  
+<li>
   <h3>Matplotlib</h3>
         <p>This library is used to create graphs for visualizing fuel prices by station.</p>
         <p>Functions like plt.plot() and plt.show() generate line plots.</p>
 </li>
+  
+<li>
   <h3>JSON</h3>
         <p>The json module saves (dump) and loads (load) user data in a lightweight, portable format.</p>
 </li>
+  
+<li>
   <h3>os</h3>
         <p>Checks if the data file exists (os.path.exists) before loading data.</p>
 </li>
