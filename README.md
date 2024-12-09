@@ -216,20 +216,20 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
   <li>
     <h3> Starting the Program</h3>
       <p>Step 1: Run the program in a Python environment (e.g., IDLE, Jupyter Notebook, or any integrated IDE that supports Python).</p>
-      <p>Step 2: The user will then be prompted to input their starting fuel level. The input should be in numerical format (e.g., liters of fuel). If the input is invalid (non-numeric), the program will ask for a valid input.</p>
+    <p>Step 2: Input the Customer Name in the designated field. This name will personalize the fuel entry records.</p>
+      <p>Step 3: Input the starting fuel level (in liters) in numerical format. If invalid input is provided, the program will request a valid input.</p>
   </li>
 
   <li>
   <h3> Adding Fuel</h3>
-      <p>Step 3: After the initial fuel level is set, the program will allow the user to add fuel by entering the amount of fuel they added.</p>
-      <p> Step 4: The program will update the total fuel count accordingly and provide a summary of the updated fuel status.</p>
+      <p>Step 4: Add fuel by entering the amount added and other relevant details</p>
+      <p> Step 5: The program updates the total fuel count and provides a summary.</p>
   </li>
   
   <li>
     <h3> Tracking Fuel Consumption</h3>
-      <p>Step 5: The program will prompt the user to input the amount of fuel consumed after each trip or refueling. The consumption input should be in liters.</p>
-      <p>Step 6: After each entry, the program will update the fuel balance, showing the remaining fuel and how much was consumed.</p>
-      <p>Step 7: If the fuel level becomes too low (e.g., below 5 liters), the program will alert the user to refuel.</p>
+      <p>Step 6: Input the amount of fuel consumed after trips or refueling.</p>
+      <p>Step 7: The program updates the fuel balance and alerts the user if fuel is too low.</p>
   </li>
   
   <li>
@@ -250,21 +250,6 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
       </code>
     </pre>
       <p>Step 9: The user can review the history at any time by selecting the "View History" option from the menu.</p>
-    <pre>
-      <code>
-        {"entries": [
-        ["2024-11-24", 50.0, 5.0, 320.0, "Petron"], 
-        ["2024-11-25", 60.0, 3.0, 200.0, "Seaoil"], 
-        ["2024-11-24", 60.0, 9.0, 1000.0, "Phoenix"],
-        ...
-        "station_data": 
-        {"Petron": [320.0, 640.0, 1450.0, 456.0, 2.0, 1.5, 2.25, 1.75], 
-        "Seaoil": [200.0, 623.0], 
-        "Phoenix": [1000.0, 563.0], 
-        "Shell": [200.0, 755.0, 73.0, 453.0, 565.0, 2.5, 1.5, 1.75, 2.5, 1.5, 1.5, 1.5, 1.5], 
-        "Petro Gazz": [546.0]}}
-      </code>
-    </pre>
   </li>
 
   <li>
