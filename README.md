@@ -237,10 +237,16 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
       <p>Step 8: The program will also allow the user to view a history of their fuel transactions, including fuel added and fuel consumed.</p>
     <pre>
       <code>
-        def save_data(self):
-          """Save entries and station data to a JSON file."""
-          with open("fuel_data.json", "w") as f:
-              json.dump({"entries": self.entries, "station_data": self.station_data}, f)
+         def create_view_history_tab(self):
+        """Create the View History tab."""
+        self.view_history_tab = ttk.Frame(self.notebook)
+        self.notebook.add(self.view_history_tab, text="View History")
+        # Create Treeview for history
+        columns = ("date", "mileage", "fuel", "price", "station")
+        self.history_table = ttk.Treeview(
+            self.view_history_tab, columns=columns, show="headings", height=20
+        )
+        self.history_table.grid(row=0, column=0, padx=10, pady=10, sticky="nsew")
       </code>
     </pre>
       <p>Step 9: The user can review the history at any time by selecting the "View History" option from the menu.</p>
