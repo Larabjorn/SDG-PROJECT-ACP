@@ -35,35 +35,55 @@
   </li>
 </ul>
 <hr></hr>
+
 <div class ="markdown-heading" dir="auto">
-<h2 tabindex="-1" class="heading-element" dir="auto"> PROJECT OVERVIEW</h2>
+  <h2 tabindex="-1" class="heading-element" dir="auto"> PROJECT OVERVIEW</h2>
 </div>
 <p dir = "auto">
 EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based application designed to help users monitor and analyze their fuel consumption efficiently. Developed using the Tkinter library, the application features an intuitive graphical user interface (GUI) that allows users to input and analyze their fuel data, compare fuel prices across gas stations, and visualize trends through interactive graphs.
 </p>
+<hr></hr>
 
-## PYTHON CONCEPTS AND LIBRARIES
+<div class ="markdown-heading" dir="auto">
+  <h2 tabindex="-1" class="heading-element" dir="auto">PYTHON CONCEPTS AND LIBRARIES
+</div>
+<ul dir="auto">
+  <li>
+    <h2>Object-Oriented Programming (OOP)</h2>
+    <p>The application is built using a class, FuelTracker, which organizes code into reusable and modular components.</p>
+  </li>
+  <li>
+    <h2>Encapsulation</h2>
+    <p>Data (e.g., entries, station_data) and methods (e.g., add_entry, save_data) are encapsulated within the class.</p>
+</li>
+  <li>
+    <h2>Methods</h2>
+    <p>Class methods are used to handle tasks, such as creating GUI components (create_add_entry_tab) or performing calculations (calculate_efficiency).</p>
 
-Object-Oriented Programming (OOP)
-        The application is built using a class, FuelTracker, which organizes code into reusable and modular components.
+</li>
+  <li>
+    <h2>Data Structures</h2>
+      <h2>Lists</h2>
+      <p>The entries list stores tuples containing data for each fuel entry (date, mileage, fuel, price, station).</p>
+</li>
+  <li>
+    <h2>Dictionaries</h2> 
+      <p>A defaultdict is used to group fuel prices by gas station (station_data), enabling efficient storage and retrieval.</p>
 
-Encapsulation: Data (e.g., entries, station_data) and methods (e.g., add_entry, save_data) are encapsulated within the class.
+</li>
+  <li>
+    <h2>File Handling</h2>
+    <p>The save_data and load_data methods use JSON to save and load application data, making it persistent across sessions.</p>
 
-Methods: Class methods are used to handle tasks, such as creating GUI components (create_add_entry_tab) or performing calculations (calculate_efficiency).
-
-Data Structures
-        Lists: The entries list stores tuples containing data for each fuel entry (date, mileage, fuel, price, station).
-
-Dictionaries: A defaultdict is used to group fuel prices by gas station (station_data), enabling efficient storage and retrieval.
-
-File Handling
-        The save_data and load_data methods use JSON to save and load application data, making it persistent across sessions.
-
-Exception Handling
-                Input validation and error messages use try-except blocks to ensure user inputs are valid and prevent crashes.
-     Datetime
-                The datetime module generates a list of the last 30 days for users to select a date easil
-                (get_last_30_days).
+</li>
+  <li>
+    <h2>Exception Handling</h2>
+    <p>Input validation and error messages use try-except blocks to ensure user inputs are valid and prevent crashes.</p>
+</li>
+  <li>
+    <h2>Datetime</h2>
+    <p>The datetime module generates a list of the last 30 days for users to select a date easil
+                (get_last_30_days).</p>
 
 ## Python Libraries
 tkinter
