@@ -81,6 +81,10 @@ Error Handling
 Flexibility and Extensibility
     Feature toggles (Checkbutton with BooleanVar) let users enable or disable analysis features, improving usability.
     New features (e.g., additional graph types or price trend predictions) can be added by expanding the class methods and tabs.
+    
+<p align="center">
+  <img src="https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/images.png" width="350">
+</p>
 
 ## SDG 12: Responsible Consumption and Production
 Sustainable Development Goals (SDG) Integration in the EcoDrive Project
