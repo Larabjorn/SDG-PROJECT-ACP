@@ -35,9 +35,12 @@
   </li>
 </ul>
 <hr></hr>
-## PROJECT OVERVIEW
-
+<div class ="markdown-heading" dir="auto">
+<h2 tabindex="-1" class="heading-element" dir="auto"> PROJECT OVERVIEW</h2>
+</div>
+<p dir = "auto">
 EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based application designed to help users monitor and analyze their fuel consumption efficiently. Developed using the Tkinter library, the application features an intuitive graphical user interface (GUI) that allows users to input and analyze their fuel data, compare fuel prices across gas stations, and visualize trends through interactive graphs.
+</p>
 
 ## PYTHON CONCEPTS AND LIBRARIES
 
