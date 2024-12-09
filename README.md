@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="C:\Users\bjornlara\project\sdg\ECO.pdf" width="350" title="EcoDrive">
-  <img src="C:\Users\bjornlara\project\sdg\ECO.pdf" width="350" alt=": Efficient Fuel Management Tool">
+  <img src="https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/ECO.png" width="350">
 </p>
 
 # EcoDrive: Efficient Fuel Management Tool
