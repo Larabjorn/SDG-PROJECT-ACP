@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="C:\Users\bjornlara\project\sdg\ECO.png" width="350" title="EcoDrive">
+  <img src="C:\Users\bjornlara\project\sdg\ECO.png" width="350" alt=": Efficient Fuel Management Tool">
+</p>
+
 # EcoDrive: Efficient Fuel Management Tool
 
 IT-2104
