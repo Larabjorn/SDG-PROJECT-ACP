@@ -216,39 +216,57 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
   <li>
     <h3> Starting the Program</h3>
       <p>Step 1: Run the program in a Python environment (e.g., IDLE, Jupyter Notebook, or any integrated IDE that supports Python).</p>
-      <p>Step 2: Once the program starts, it will display a welcome message to greet the user.</p>
-      <p>Step 3: The user will then be prompted to input their starting fuel level. The input should be in numerical format (e.g., liters of fuel). If the input is invalid (non-numeric), the program will ask for a valid input.</p>
+      <p>Step 2: The user will then be prompted to input their starting fuel level. The input should be in numerical format (e.g., liters of fuel). If the input is invalid (non-numeric), the program will ask for a valid input.</p>
   </li>
 
   <li>
   <h3> Adding Fuel</h3>
-      <p>Step 4: After the initial fuel level is set, the program will allow the user to add fuel by entering the amount of fuel they added.</p>
-      <p> Step 5: The program will update the total fuel count accordingly and provide a summary of the updated fuel status.</p>
+      <p>Step 3: After the initial fuel level is set, the program will allow the user to add fuel by entering the amount of fuel they added.</p>
+      <p> Step 4: The program will update the total fuel count accordingly and provide a summary of the updated fuel status.</p>
   </li>
   
   <li>
     <h3> Tracking Fuel Consumption</h3>
-      <p>Step 6: The program will prompt the user to input the amount of fuel consumed after each trip or refueling. The consumption input should be in liters.</p>
-      <p>Step 7: After each entry, the program will update the fuel balance, showing the remaining fuel and how much was consumed.</p>
-      <p>Step 8: If the fuel level becomes too low (e.g., below 5 liters), the program will alert the user to refuel.</p>
+      <p>Step 5: The program will prompt the user to input the amount of fuel consumed after each trip or refueling. The consumption input should be in liters.</p>
+      <p>Step 6: After each entry, the program will update the fuel balance, showing the remaining fuel and how much was consumed.</p>
+      <p>Step 7: If the fuel level becomes too low (e.g., below 5 liters), the program will alert the user to refuel.</p>
   </li>
   
   <li>
     <h3> Viewing Fuel History</h3>
-      <p>Step 9: The program will also allow the user to view a history of their fuel transactions, including fuel added and fuel consumed.</p>
-      <p>Step 10: The user can review the history at any time by selecting the "View History" option from the menu.</p>
+      <p>Step 8: The program will also allow the user to view a history of their fuel transactions, including fuel added and fuel consumed.</p>
+    <code>
+      def save_data(self):
+        """Save entries and station data to a JSON file."""
+        with open("fuel_data.json", "w") as f:
+            json.dump({"entries": self.entries, "station_data": self.station_data}, f)
+    </code>
+      <p>Step 9: The user can review the history at any time by selecting the "View History" option from the menu.</p>
+    <code>
+      {"entries": [
+      ["2024-11-24", 50.0, 5.0, 320.0, "Petron"], 
+      ["2024-11-25", 60.0, 3.0, 200.0, "Seaoil"], 
+      ["2024-11-24", 60.0, 9.0, 1000.0, "Phoenix"],
+      ...
+      "station_data": 
+      {"Petron": [320.0, 640.0, 1450.0, 456.0, 2.0, 1.5, 2.25, 1.75], 
+      "Seaoil": [200.0, 623.0], 
+      "Phoenix": [1000.0, 563.0], 
+      "Shell": [200.0, 755.0, 73.0, 453.0, 565.0, 2.5, 1.5, 1.75, 2.5, 1.5, 1.5, 1.5, 1.5], 
+      "Petro Gazz": [546.0]}}
+    </code>
   </li>
 
   <li>
   <h3> Setting Fuel Alerts</h3>
-      <p>Step 11: Users can set alerts to notify them when their fuel reaches a specified level (e.g., 10 liters). The program will monitor the fuel level and send an alert when it’s time to refuel.</p>
-      <p>Step 12: If the fuel level falls below the set alert threshold, the program will send a notification, reminding the user to refuel.</p>
+      <p>Step 10: Users can set alerts to notify them when their fuel reaches a specified level (e.g., 10 liters). The program will monitor the fuel level and send an alert when it’s time to refuel.</p>
+      <p>Step 11: If the fuel level falls below the set alert threshold, the program will send a notification, reminding the user to refuel.</p>
   </li>
 
   <li>
     <h3> Ending the Program</h3>
-      <p>Step 13: When the user decides to stop tracking, they can exit the program by selecting the "Exit" option from the main menu.</p>
-      <p>Step 14: Upon exit, the program will save all data and display a thank you message, reminding the user to drive safely.</p>
+      <p>Step 12: When the user decides to stop tracking, they can exit the program by selecting the "Exit" option from the main menu.</p>
+      <p>Step 13: Upon exit, the program will save all data and display a thank you message, reminding the user to drive safely.</p>
   </li>
   </ul>
 
@@ -257,9 +275,16 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 </div>
 <ol dir = "auto">
   <ul dir="auto">
-Completing this Fuel Tracker project has been a rewarding challenge. While coding is still an area I continue to learn and grow in, I am proud of the end result. I would like to express my heartfelt thanks to:
-
-God for providing strength and wisdom to complete the project.
+    <p>Completing this Fuel Tracker project has been a rewarding challenge. While coding is still an area I continue     to learn and grow in, I am proud of the end result. I would like to express my heartfelt thanks to:</p>
+    <li>To our beloved SANRIO Fan din : Ma'am Fatima</li>
+    <li>To my Mi Familia loved and support me</li>
+    <li>To my mentor, bestu prendu, Jenrick Magtaas and friends</li>
+    <li>Sa computer ko, hingalo na</li>
+    <li>Sa pasensya ko, gabi gabi nalang pinapatayan ng wi-fi</li>
+    <li>To myself that manage the struggles, still look good and have nice fits</li>
+  </ul>
+  
+<li> God for providing strength and wisdom to complete the project.
 My family for their constant support and encouragement.
 My professor for providing valuable insights and feedback throughout this journey.
 Myself, for persevering through challenges and sticking with it.
