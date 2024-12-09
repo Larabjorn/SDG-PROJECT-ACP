@@ -138,7 +138,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <ul dir="auto">
 <li>
     <h2>Save Functionality</h2> 
-        <p>The <code>save_data method converts the <code>entries</code> list and <code>station_data</code> dictionary into a JSON format and writes it to a file.</p>
+        <p>The <code>save_data</code> method converts the <code>entries</code> list and <code>station_data</code> dictionary into a JSON format and writes it to a file.</p>
 </li>
 <li>
     <h2>Load Functionality</h2> 
