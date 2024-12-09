@@ -287,10 +287,5 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
     <li>Sa pasensya ko, gabi gabi nalang pinapatayan ng wi-fi</li>
     <li>To myself that manage the struggles, still look good and have nice fits</li>
   </ul>
-  
-<li> God for providing strength and wisdom to complete the project.
-My family for their constant support and encouragement.
-My professor for providing valuable insights and feedback throughout this journey.
-Myself, for persevering through challenges and sticking with it.
-This project aims to simplify fuel tracking and enhance the overall experience of users. I hope it serves its purpose and is a useful tool for all. Thank you for using the Fuel Tracker!
+
 
