@@ -51,7 +51,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
   <li>
     <h2>Object-Oriented Programming (OOP)</h2>
     <p>The application is built using a class, FuelTracker, which organizes code into reusable and modular components.</p>
-    <h3>Encapsulation</h3>
+    <h4>Encapsulation</h4>
     <p>Data (e.g., entries, station_data) and methods (e.g., add_entry, save_data) are encapsulated within the class.</p>
     <h3>Methods</h3>
     <p>Class methods are used to handle tasks, such as creating GUI components (create_add_entry_tab) or performing calculations (calculate_efficiency).</p>
@@ -59,9 +59,9 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
   
   <li>
     <h2>Data Structures</h2>
-    <h2>Lists</h2>
+    <h4>Lists</h4>
       <p>The entries list stores tuples containing data for each fuel entry (date, mileage, fuel, price, station).</p>
-    <h2>Dictionaries</h2> 
+    <h4>Dictionaries</h4> 
       <p>A defaultdict is used to group fuel prices by gas station (station_data), enabling efficient storage and retrieval.</p>
 </li>
 
