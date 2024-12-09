@@ -79,7 +79,8 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
     <p>The datetime module generates a list of the last 30 days for users to select a date easil
                 (get_last_30_days).</p>
 </li>
-
+</ul>
+  
 <div class ="markdown-heading" dir="auto">
   <h2 tabindex="-1" class="heading-element" dir="auto">Python Libraries
 </div>
@@ -104,7 +105,8 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
   <h3>os</h3>
         <p>Checks if the data file exists (os.path.exists) before loading data.</p>
 </li>
-  
+</ul>
+    
 ## GUI Features and Interactions
 Dropdown Menus and Manual Entry
         Dropdowns (ttk.Combobox) provide pre-defined options for easier input (e.g., selecting mileage or fuel), while text entries allow flexibility for manual input.
