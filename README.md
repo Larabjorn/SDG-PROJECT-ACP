@@ -22,16 +22,16 @@
     <a href="#-project-overview">Project Overview</a>
   </li>
   <li>
-    <a href="#-PYTHON-CONCEPTS-AND-LIBRARIES">PYTHON CONCEPTS AND LIBRARIES</a>
+    <a href="#i-PYTHON-CONCEPTS-AND-LIBRARIES">PYTHON CONCEPTS AND LIBRARIES</a>
   </li>
   <li>
-    <a href="#-CHOSEN-SDG">CHOSEN SDG</a>
+    <a href="#ii-CHOSEN-SDG">CHOSEN SDG</a>
   </li>
   <li>
-    <a href="#-INSTRUCTIONS-ON-HOW-TO-RUN-THE-PROGRAM">INSTRUCTIONS ON HOW TO RUN THE PROGRAM</a>
+    <a href="#iii-INSTRUCTIONS-ON-HOW-TO-RUN-THE-PROGRAM">INSTRUCTIONS ON HOW TO RUN THE PROGRAM</a>
   </li>
    <li>
-    <a href="#-Gratitude-Statement">Gratitude Statement</a>
+    <a href="#iv-Gratitude-Statement">Gratitude Statement</a>
   </li>
 </ul>
 <hr></hr>
@@ -45,7 +45,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <hr></hr>
 
 <div class ="markdown-heading" dir="auto">
-  <h2 tabindex="-2" class="heading-element" dir="auto">PYTHON CONCEPTS AND LIBRARIES
+  <h2 tabindex="-1" class="heading-element" dir="auto">PYTHON CONCEPTS AND LIBRARIES
 </div>
 <ul dir="auto">
   <li>
