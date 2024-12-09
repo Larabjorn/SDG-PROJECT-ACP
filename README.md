@@ -5,7 +5,7 @@
 <h1 align = "center" tabindex="-1" class= "heading element" dir+"auto"> EcoDrive</h1>
 <p align = " center" dir= "auto">
   <em>
-    <code> : Efficient Fuel Management Tool</code>
+    <code> Efficient Fuel Management Tool</code>
   </em>
 </p>
 <p align = "center" dir="auto">
@@ -16,16 +16,25 @@
   </a>
 </p>
 <hr></hr>
-## TABLE OF CONTENT
-  [PROJECT OVERVIEW](#PROJECT OVERVIEW)
-  [PYTHON CONCEPTS AND LIBRARIES](#PYTHON CONCEPTS AND LIBRARIES)
-  [Python Libraries](#Python Libraries)
-  [GUI Features and Interactions](#GUI Features and Interactions)
-  [SDG 12: Responsible Consumption and Production](#SDG 12: Responsible Consumption and Production)
-  [INSTRUCTIONS ON HOW TO RUN THE PROGRAM](#INSTRUCTIONS ON HOW TO RUN THE PROGRAM)
-  [Gratitude Statement](#Gratitude Statement)
-
-
+<h2> TABLE OF CONTENT</h2>
+<ul dir="auto">
+  <li>
+    <a href="#-project-overview">Project Overview</a>
+  </li>
+  <li>
+    <a href="#-PYTHON CONCEPTS AND LIBRARIES">PYTHON CONCEPTS AND LIBRARIES</a>
+  </li>
+  <li>
+    <a href="#-SDG 12: Responsible Consumption and Production">SDG 12: Responsible Consumption and Production</a>
+  </li>
+  <li>
+    <a href="#-INSTRUCTIONS ON HOW TO RUN THE PROGRAM">INSTRUCTIONS ON HOW TO RUN THE PROGRAM</a>
+  </li>
+   <li>
+    <a href="#-Gratitude Statement">Gratitude Statement</a>
+  </li>
+</ul>
+<hr></hr>
 ## PROJECT OVERVIEW
 
 EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based application designed to help users monitor and analyze their fuel consumption efficiently. Developed using the Tkinter library, the application features an intuitive graphical user interface (GUI) that allows users to input and analyze their fuel data, compare fuel prices across gas stations, and visualize trends through interactive graphs.
