@@ -25,7 +25,7 @@
     <a href="#-PYTHON CONCEPTS AND LIBRARIES">PYTHON CONCEPTS AND LIBRARIES</a>
   </li>
   <li>
-    <a href="#-SDG 12: Responsible Consumption and Production">SDG 12: Responsible Consumption and Production</a>
+    <a href="#-CHOSEN SDG">CHOSEN SDG</a>
   </li>
   <li>
     <a href="#-INSTRUCTIONS ON HOW TO RUN THE PROGRAM">INSTRUCTIONS ON HOW TO RUN THE PROGRAM</a>
@@ -115,7 +115,8 @@ Flexibility and Extensibility
   <img src="https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/images.png">
 </p>
 
-## SDG 12: Responsible Consumption and Production
+## CHOSEN SDG
+SDG 12: Responsible Consumption and Production
 Sustainable Development Goals (SDG) Integration in the EcoDrive Project
 The Fuel Tracker app not only helps users track fuel consumption but also aligns with several United Nations 
 
