@@ -251,17 +251,10 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
     </pre>
       <p>Step 9: The user can review the history at any time by selecting the "View History" option from the menu.</p>
   </li>
-
-  <li>
-  <h3> Setting Fuel Alerts</h3>
-      <p>Step 10: Users can set alerts to notify them when their fuel reaches a specified level (e.g., 10 liters). The program will monitor the fuel level and send an alert when it’s time to refuel.</p>
-      <p>Step 11: If the fuel level falls below the set alert threshold, the program will send a notification, reminding the user to refuel.</p>
-  </li>
-
   <li>
     <h3> Ending the Program</h3>
-      <p>Step 12: When the user decides to stop tracking, they can exit the program by selecting the "Exit" option from the main menu.</p>
-      <p>Step 13: Upon exit, the program will save all data and display a thank you message, reminding the user to drive safely.</p>
+      <p>Step 10: When the user decides to stop tracking, they can exit the program by selecting the "Exit" option from the main menu.</p>
+  
   </li>
   </ul>
 
