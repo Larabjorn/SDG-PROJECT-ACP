@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/ECO.png" width="350">
+  <img src="[https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/ECO.png](https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/image%20project/ECO.png)" width="350">
 </p>
 
 <h1 align = "center" tabindex="-1" class= "heading element" dir+"auto"> EcoDrive</h1>
@@ -195,7 +195,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 </div>
 <p dir = "auto">
     <h3>SDG 12: Responsible Consumption and Production</h3>
-    <img src="https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/images.png">
+    <img src="[https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/images.png](https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/image%20project/images.png)">
     Sustainable Development Goals (SDG) Integration in the EcoDrive Project
     The Fuel Tracker app not only helps users track fuel consumption but also aligns with several United Nations 
 <br>
