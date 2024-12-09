@@ -53,7 +53,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
     <p>The application is built using a class, FuelTracker, which organizes code into reusable and modular components.</p>
     <h4>Encapsulation</h4>
     <p>Data (e.g., entries, station_data) and methods (e.g., add_entry, save_data) are encapsulated within the class.</p>
-    <h3>Methods</h3>
+    <h4>Methods</h4>
     <p>Class methods are used to handle tasks, such as creating GUI components (create_add_entry_tab) or performing calculations (calculate_efficiency).</p>
 </li>
   
@@ -78,23 +78,33 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
     <h2>Datetime</h2>
     <p>The datetime module generates a list of the last 30 days for users to select a date easil
                 (get_last_30_days).</p>
+</li>
 
-## Python Libraries
-tkinter
-        Used to create the graphical user interface (GUI). It manages components like labels, buttons, and dropdowns.
-Widgets Used:
-  ttk.Entry, ttk.Combobox, ttk.Button, and ttk.Checkbutton handle user input.
-            
-  ttk.Notebook organizes the interface into tabs (e.g., "Add Entry" and "Analysis").
-            Grid Layout: Ensures the layout is responsive and centered.
-Matplotlib
-        This library is used to create graphs for visualizing fuel prices by station.
-        Functions like plt.plot() and plt.show() generate line plots.
-JSON
-        The json module saves (dump) and loads (load) user data in a lightweight, portable format.
-os
-        Checks if the data file exists (os.path.exists) before loading data.
-
+<div class ="markdown-heading" dir="auto">
+  <h2 tabindex="-1" class="heading-element" dir="auto">Python Libraries
+</div>
+<ul dir="auto">
+<li>
+    <h2>tkinter</h2>
+    <p>Used to create the graphical user interface (GUI). It manages components like labels, buttons, and dropdowns.
+</p>
+</li>
+  <h3>Widgets Used:</h3>
+        <p>ttk.Entry, ttk.Combobox, ttk.Button, and ttk.Checkbutton handle user input.</p>
+        <p>ttk.Notebook organizes the interface into tabs (e.g., "Add Entry" and "Analysis").</p>
+        <p>Grid Layout: Ensures the layout is responsive and centered.</p>
+</li>
+  <h3>Matplotlib</h3>
+        <p>This library is used to create graphs for visualizing fuel prices by station.</p>
+        <p>Functions like plt.plot() and plt.show() generate line plots.</p>
+</li>
+  <h3>JSON</h3>
+        <p>The json module saves (dump) and loads (load) user data in a lightweight, portable format.</p>
+</li>
+  <h3>os</h3>
+        <p>Checks if the data file exists (os.path.exists) before loading data.</p>
+</li>
+  
 ## GUI Features and Interactions
 Dropdown Menus and Manual Entry
         Dropdowns (ttk.Combobox) provide pre-defined options for easier input (e.g., selecting mileage or fuel), while text entries allow flexibility for manual input.
