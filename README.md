@@ -50,34 +50,34 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <ul dir="auto">
   <li>
     <h2>Object-Oriented Programming (OOP)</h2>
-    <p>The application is built using a class, FuelTracker, which organizes code into reusable and modular components.</p>
+    <p>The application is built using a class, <code>FuelTracker</code>, which organizes code into reusable and modular components.</p>
     <h4>Encapsulation</h4>
-    <p>Data (e.g., entries, station_data) and methods (e.g., add_entry, save_data) are encapsulated within the class.</p>
+    <p>Data (e.g., <code>entries</code>, <code>station_data</code>) and methods (e.g., <code>add_entry</code>, <code>save_data</code>) are encapsulated within the class.</p>
     <h4>Methods</h4>
-    <p>Class methods are used to handle tasks, such as creating GUI components (create_add_entry_tab) or performing calculations (calculate_efficiency).</p>
+    <p>Class methods are used to handle tasks, such as creating GUI components (<code>create_add_entry_tab</code>) or performing calculations (<code>calculate_efficiency</code>).</p>
 </li>
   
   <li>
     <h2>Data Structures</h2>
     <h4>Lists</h4>
-      <p>The entries list stores tuples containing data for each fuel entry (date, mileage, fuel, price, station).</p>
+      <p>The <code>entries</code> list stores tuples containing data for each fuel entry (date, mileage, fuel, price, station).</p>
     <h4>Dictionaries</h4> 
-      <p>A defaultdict is used to group fuel prices by gas station (station_data), enabling efficient storage and retrieval.</p>
+      <p>A <code>defaultdict</code> is used to group fuel prices by gas station (<code>station_data</code>), enabling efficient storage and retrieval.</p>
 </li>
 
   <li>
     <h2>File Handling</h2>
-    <p>The save_data and load_data methods use JSON to save and load application data, making it persistent across sessions.</p>
+    <p>The <code>save_data</code> and <code>load_data</code> methods use JSON to save and load application data, making it persistent across sessions.</p>
 
 </li>
   <li>
     <h2>Exception Handling</h2>
-    <p>Input validation and error messages use try-except blocks to ensure user inputs are valid and prevent crashes.</p>
+    <p>Input validation and error messages use <code>try-except</code> blocks to ensure user inputs are valid and prevent crashes.</p>
 </li>
   <li>
     <h2>Datetime</h2>
-    <p>The datetime module generates a list of the last 30 days for users to select a date easil
-                (get_last_30_days).</p>
+    <p>The <code>datetime</code> module generates a list of the last 30 days for users to select a date easil
+                (<code>get_last_30_days</code>).</p>
 </li>
 </ul>
   
@@ -91,25 +91,25 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 </p>
 </li>
   <h3>Widgets Used:</h3>
-        <p>ttk.Entry, ttk.Combobox, ttk.Button, and ttk.Checkbutton handle user input.</p>
-        <p>ttk.Notebook organizes the interface into tabs (e.g., "Add Entry" and "Analysis").</p>
+        <p><code>ttk.Entry</code>, <code>ttk.Combobox</code>, <code>ttk.Button</code>, and <code>ttk.Checkbutton</code> handle user input.</p>
+        <p><code>ttk.Notebook</code> organizes the interface into tabs (e.g., "Add Entry" and "Analysis").</p>
         <p>Grid Layout: Ensures the layout is responsive and centered.</p>
 </li>
   
 <li>
   <h2>Matplotlib</h2>
         <p>This library is used to create graphs for visualizing fuel prices by station.</p>
-        <p>Functions like plt.plot() and plt.show() generate line plots.</p>
+        <p>Functions like <code>plt.plot()</code> and <code>plt.show()</code> generate line plots.</p>
 </li>
   
 <li>
   <h2>JSON</h2>
-        <p>The json module saves (dump) and loads (load) user data in a lightweight, portable format.</p>
+        <p>The <code>json</code> module saves (<code>dump</code>) and loads (load) user data in a lightweight, portable format.</p>
 </li>
   
 <li>
   <h2>os</h2>
-        <p>Checks if the data file exists (os.path.exists) before loading data.</p>
+        <p>Checks if the data file exists (<code>os.path.exists</code>) before loading data.</p>
 </li>
 </ul>
 
@@ -119,16 +119,16 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <ul dir="auto">
 <li>    
   <h2>Dropdown Menus and Manual Entry</h2>
-        <p>Dropdowns (ttk.Combobox) provide pre-defined options for easier input (e.g., selecting mileage or fuel), while text entries allow flexibility for manual input.</p>
+        <p>Dropdowns (<code>ttk.Combobox</code>) provide pre-defined options for easier input (e.g., selecting mileage or fuel), while text entries allow flexibility for manual input.</p>
 </li>
 <li>
   <h2>Tab-Based Navigation</h2>
-        <p>The ttk.Notebook organizes the app into tabs for logical separation of features:
+        <p>The <code>ttk.Notebook organizes</code> the app into tabs for logical separation of features:
             <h4>Add Entry Tab</h4> <p>For entering fuel data.</p>
             <h4>Analysis Tab</h4> <p>For toggling features, calculating efficiency, comparing stations, and viewing graphs.</p>
 </li>
  <h2>Buttons</h2>
-        <p>Buttons (ttk.Button) trigger specific functions, such as adding entries or calculating fuel efficiency.</p>
+        <p>Buttons (<code>ttk.Button</code>) trigger specific functions, such as adding entries or calculating fuel efficiency.</p>
 </li>
 </ul>
     
@@ -138,11 +138,11 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <ul dir="auto">
 <li>
     <h2>Save Functionality</h2> 
-        <p>The save_data method converts the entries list  and station_data dictionary into a JSON format and writes it to a file.</p>
+        <p>The <code>save_data method converts the <code>entries</code> list and <code>station_data</code> dictionary into a JSON format and writes it to a file.</p>
 </li>
 <li>
     <h2>Load Functionality</h2> 
-  <p>The load_data method reads from the JSON file, ensuring all data is retained between sessions.</p>
+  <p>The <code>load_data</code> method reads from the JSON file, ensuring all data is retained between sessions.</p>
 </li>
 </ul>
     
@@ -152,8 +152,8 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <ul dir="auto">
 <li>
     <h2>Adding Entries</h2>
-        <p>User inputs (e.g., date, mileage, fuel) are validated and stored in the entries list.</p>
-        <p>The station_data dictionary updates to include fuel prices grouped by station.</p>
+        <p>User inputs (e.g., date, mileage, fuel) are validated and stored in the <code>entries</code> list.</p>
+        <p>The <code>station_data</code> dictionary updates to include fuel prices grouped by station.</p>
 </li>
 <li>
     <h2>Fuel Efficiency Calculation</h2>
@@ -161,11 +161,11 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 </li> 
 <li>
     <h2>Station Comparisons</h2>
-        <p>Average fuel prices for each station are computed using Python's sum() and len() functions, and the results are displayed in a messagebox.</p>
+        <p>Average fuel prices for each station are computed using Python's <code>sum()</code> and <code>len()</code> functions, and the results are displayed in a <code>messagebox</code>.</p>
 </li>
 <li>
     <h2>Graphing</h2>
-        <p>The matplotlib.pyplot module is used to create line plots for station-wise fuel prices, making trends easy to understand.</p>
+        <p>The <code>matplotlib.pyplot</code> module is used to create line plots for station-wise fuel prices, making trends easy to understand.</p>
 </li>
 </ul>
     
@@ -175,7 +175,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <ul dir="auto">
 <li>
     <p>Validations prevent invalid inputs, such as empty fields or non-numeric values.</p>
-    <p>Friendly error messages are shown via messagebox.showerror.</p>
+    <p>Friendly error messages are shown via <code>messagebox.showerror</code>.</p>
 </li>
 </ul>
   <div class ="markdown-heading" dir="auto">
@@ -183,7 +183,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 </div>
 <ul dir="auto">
 <li>
-    <p>Feature toggles (Checkbutton with BooleanVar) let users enable or disable analysis features, improving usability.</p>
+    <p>Feature toggles (<code>Checkbutton</code> with <code>BooleanVar</code>) let users enable or disable analysis features, improving usability.</p>
     <p>New features (e.g., additional graph types or price trend predictions) can be added by expanding the class methods and tabs.</p>
 </li>
 </ul>
@@ -213,45 +213,49 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
   <ul dir="auto">
     <h4>The guidelines below will help you understand how the EcoDrive: Efficient Fuel Management Tool works.</h4>
   <li>
-    <h3>- Starting the Program</h3>
+    <h3> Starting the Program</h3>
       <p>Step 1: Run the program in a Python environment (e.g., IDLE, Jupyter Notebook, or any integrated IDE that supports Python).</p>
       <p>Step 2: Once the program starts, it will display a welcome message to greet the user.</p>
       <p>Step 3: The user will then be prompted to input their starting fuel level. The input should be in numerical format (e.g., liters of fuel). If the input is invalid (non-numeric), the program will ask for a valid input.</p>
   </li>
 
   <li>
-  <h3>- Adding Fuel</h3>
+  <h3> Adding Fuel</h3>
       <p>Step 4: After the initial fuel level is set, the program will allow the user to add fuel by entering the amount of fuel they added.</p>
       <p> Step 5: The program will update the total fuel count accordingly and provide a summary of the updated fuel status.</p>
   </li>
   
   <li>
-    <h3>- Tracking Fuel Consumption</h3>
+    <h3> Tracking Fuel Consumption</h3>
       <p>Step 6: The program will prompt the user to input the amount of fuel consumed after each trip or refueling. The consumption input should be in liters.</p>
       <p>Step 7: After each entry, the program will update the fuel balance, showing the remaining fuel and how much was consumed.</p>
       <p>Step 8: If the fuel level becomes too low (e.g., below 5 liters), the program will alert the user to refuel.</p>
   </li>
   
   <li>
-    <h3>- Viewing Fuel History</h3>
+    <h3> Viewing Fuel History</h3>
       <p>Step 9: The program will also allow the user to view a history of their fuel transactions, including fuel added and fuel consumed.</p>
       <p>Step 10: The user can review the history at any time by selecting the "View History" option from the menu.</p>
   </li>
 
   <li>
-  <h3>- Setting Fuel Alerts</h3>
+  <h3> Setting Fuel Alerts</h3>
       <p>Step 11: Users can set alerts to notify them when their fuel reaches a specified level (e.g., 10 liters). The program will monitor the fuel level and send an alert when it’s time to refuel.</p>
       <p>Step 12: If the fuel level falls below the set alert threshold, the program will send a notification, reminding the user to refuel.</p>
   </li>
 
   <li>
-    <h3>- Ending the Program</h3>
+    <h3> Ending the Program</h3>
       <p>Step 13: When the user decides to stop tracking, they can exit the program by selecting the "Exit" option from the main menu.</p>
       <p>Step 14: Upon exit, the program will save all data and display a thank you message, reminding the user to drive safely.</p>
   </li>
   </ul>
 
-## Gratitude Statement
+<div class ="markdown-heading" dir="auto">
+  <h2 tabindex="-1" class="heading-element" dir="auto">Gratitude Statement</h2>
+</div>
+<ol dir = "auto">
+  <ul dir="auto">
 Completing this Fuel Tracker project has been a rewarding challenge. While coding is still an area I continue to learn and grow in, I am proud of the end result. I would like to express my heartfelt thanks to:
 
 God for providing strength and wisdom to complete the project.
