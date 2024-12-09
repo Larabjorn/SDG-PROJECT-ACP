@@ -58,7 +58,7 @@ Tab-Based Navigation
 Persistent Storage with JSON
     Save Functionality: The save_data method converts the entries list  and station_data dictionary into a JSON format and writes it to a file.
 
-    Load Functionality: The load_data method reads from the JSON file, ensuring all data is retained between sessions.
+Load Functionality: The load_data method reads from the JSON file, ensuring all data is retained between sessions.
 
 Core Functionalities and Their Python Implementation
     - Adding Entries
@@ -78,36 +78,14 @@ Flexibility and Extensibility
     Feature toggles (Checkbutton with BooleanVar) let users enable or disable analysis features, improving usability.
     New features (e.g., additional graph types or price trend predictions) can be added by expanding the class methods and tabs.
 
-
+## SDG 12: Responsible Consumption and Production
 Sustainable Development Goals (SDG) Integration in the EcoDrive Project
-The Fuel Tracker app not only helps users track fuel consumption but also aligns with several United Nations Sustainable Development Goals (SDGs). It promotes sustainability, responsible consumption, and climate action. Below are the SDGs integrated into the project:
+The Fuel Tracker app not only helps users track fuel consumption but also aligns with several United Nations 
 
-SDG 7: Affordable and Clean Energy
-The app encourages users to optimize fuel consumption, reducing reliance on non-renewable resources and promoting cleaner energy use.
+Reduces carbon emissions by fostering efficient fuel consumption.
 
-Impact: Reduces carbon emissions by fostering efficient fuel consumption.
-SDG 12: Responsible Consumption and Production
 By providing insights on fuel usage, the app encourages users to make more sustainable consumption choices, minimizing waste.
 
-Impact: Helps users consume fuel responsibly, reducing environmental impact.
-SDG 13: Climate Action
-The app tracks fuel efficiency and encourages sustainable driving practices, contributing to efforts to mitigate climate change.
-
-Impact: Lower emissions from transport, supporting climate action goals.
-SDG 8: Decent Work and Economic Growth
-By tracking fuel costs and efficiency, the app helps users save on expenses, fostering economic growth.
-
-Impact: Reduces fuel-related costs for individuals and businesses, supporting economic efficiency.
-SDG 9: Industry, Innovation, and Infrastructure
-The app promotes innovation by offering technology-driven solutions for fuel tracking, contributing to smarter transportation infrastructure.
-
-Impact: Supports the development of sustainable transport systems through technology.
-SDG 17: Partnerships for the Goals
-Through partnerships with fuel stations and organizations, the app helps provide users with valuable data on fuel prices and sustainability.
-
-Impact: Strengthens collaboration for a more sustainable future.
-Conclusion
-The Fuel Tracker app contributes to global sustainability goals by encouraging efficient fuel use, supporting responsible consumption, and promoting climate action. It empowers users to make informed decisions that align with SDGs, helping create a greener, more economically sustainable future.
 
 ## INSTRUCTIONS ON HOW TO RUN THE PROGRAM
 The guidelines below will help you understand how the EcoDrive: Efficient Fuel Management Tool works.
