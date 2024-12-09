@@ -48,75 +48,81 @@ class FuelTracker:
         form_frame = ttk.Frame(self.add_entry_tab)
         form_frame.grid(row=1, column=1, padx=20, pady=20)
 
+        # Customer Name
+        ttk.Label(form_frame, text="Customer Name:").grid(row=0, column=0, sticky="e", padx=10, pady=5)
+        self.customer_name_var = tk.StringVar()
+        self.customer_name_entry = ttk.Entry(form_frame, textvariable=self.customer_name_var)
+        self.customer_name_entry.grid(row=0, column=1, padx=10, pady=5)
+
         # Date
-        ttk.Label(form_frame, text="Date (YYYY-MM-DD):").grid(row=0, column=0, sticky="e", padx=10, pady=5)
+        ttk.Label(form_frame, text="Date (YYYY-MM-DD):").grid(row=1, column=0, sticky="e", padx=10, pady=5)
         self.date_var = tk.StringVar()
         self.date_dropdown = ttk.Combobox(
             form_frame, textvariable=self.date_var, values=self.get_last_30_days(), state="readonly"
         )
-        self.date_dropdown.grid(row=0, column=1, padx=10, pady=5)
+        self.date_dropdown.grid(row=1, column=1, padx=10, pady=5)
         self.date_dropdown.set("Select Date")
         
         # Manual date entry
         self.date_manual_entry = ttk.Entry(form_frame)
-        self.date_manual_entry.grid(row=0, column=2, padx=10, pady=5)
+        self.date_manual_entry.grid(row=1, column=2, padx=10, pady=5)
         self.date_manual_entry.insert(0, "Or type manually")
 
         # Mileage
-        ttk.Label(form_frame, text="Mileage (km):").grid(row=1, column=0, sticky="e", padx=10, pady=5)
+        ttk.Label(form_frame, text="Mileage (km):").grid(row=2, column=0, sticky="e", padx=10, pady=5)
         self.mileage_var = tk.StringVar()
         self.mileage_dropdown = ttk.Combobox(
             form_frame, textvariable=self.mileage_var, values=[str(i) for i in range(50, 501, 10)], state="readonly"
         )
-        self.mileage_dropdown.grid(row=1, column=1, padx=10, pady=5)
+        self.mileage_dropdown.grid(row=2, column=1, padx=10, pady=5)
         self.mileage_dropdown.set("Select Mileage")
 
         # Manual mileage entry
         self.mileage_manual_entry = ttk.Entry(form_frame)
-        self.mileage_manual_entry.grid(row=1, column=2, padx=10, pady=5)
+        self.mileage_manual_entry.grid(row=2, column=2, padx=10, pady=5)
         self.mileage_manual_entry.insert(0, "Or type manually")
 
         # Fuel Added
-        ttk.Label(form_frame, text="Fuel Added (liters):").grid(row=2, column=0, sticky="e", padx=10, pady=5)
+        ttk.Label(form_frame, text="Fuel Added (liters):").grid(row=3, column=0, sticky="e", padx=10, pady=5)
         self.fuel_var = tk.StringVar()
         self.fuel_dropdown = ttk.Combobox(
             form_frame, textvariable=self.fuel_var, values=[str(i) for i in range(1, 101)], state="readonly"
         )
-        self.fuel_dropdown.grid(row=2, column=1, padx=10, pady=5)
+        self.fuel_dropdown.grid(row=3, column=1, padx=10, pady=5)
         self.fuel_dropdown.set("Select Fuel")
 
         # Manual fuel entry
         self.fuel_manual_entry = ttk.Entry(form_frame)
-        self.fuel_manual_entry.grid(row=2, column=2, padx=10, pady=5)
+        self.fuel_manual_entry.grid(row=3, column=2, padx=10, pady=5)
         self.fuel_manual_entry.insert(0, "Or type manually")
 
         # Price
-        ttk.Label(form_frame, text="Price (currency):").grid(row=3, column=0, sticky="e", padx=10, pady=5)
+        ttk.Label(form_frame, text="Price (currency):").grid(row=4, column=0, sticky="e", padx=10, pady=5)
         self.price_var = tk.StringVar()
         self.price_dropdown = ttk.Combobox(
             form_frame, textvariable=self.price_var, values=["1.50", "1.75", "2.00", "2.25", "2.50"], state="readonly"
         )
-        self.price_dropdown.grid(row=3, column=1, padx=10, pady=5)
+        self.price_dropdown.grid(row=4, column=1, padx=10, pady=5)
         self.price_dropdown.set("Select Price")
 
         # Gas Station
-        ttk.Label(form_frame, text="Gas Station:").grid(row=4, column=0, sticky="e", padx=10, pady=5)
+        ttk.Label(form_frame, text="Gas Station:").grid(row=5, column=0, sticky="e", padx=10, pady=5)
         self.station_var = tk.StringVar()
         station_options = ["Shell", "Petron", "Petro Gazz", "Phoenix", "Seaoil", "Flying V", "Unioil", "Clean Fuel"]
         self.station_dropdown = ttk.Combobox(
             form_frame, textvariable=self.station_var, values=station_options, state="readonly"
         )
-        self.station_dropdown.grid(row=4, column=1, padx=10, pady=5)
+        self.station_dropdown.grid(row=5, column=1, padx=10, pady=5)
         self.station_dropdown.set("Select Station")
 
         # Manual station entry
         self.station_manual_entry = ttk.Entry(form_frame)
-        self.station_manual_entry.grid(row=4, column=2, padx=10, pady=5)
+        self.station_manual_entry.grid(row=5, column=2, padx=10, pady=5)
         self.station_manual_entry.insert(0, "Or type manually")
 
         # Add Entry Button
         add_button = ttk.Button(form_frame, text="Add Entry", command=self.add_entry)
-        add_button.grid(row=5, column=0, columnspan=3, pady=20)
+        add_button.grid(row=6, column=0, columnspan=3, pady=20)
 
     def get_last_30_days(self):
         """Generate a list of the last 30 days."""
@@ -127,6 +133,7 @@ class FuelTracker:
         """Add a new fuel entry."""
         try:
             # Get data from fields or dropdowns
+            customer_name = self.customer_name_var.get()
             date = self.date_manual_entry.get() if self.date_manual_entry.get() != "Or type manually" else self.date_var.get()
             mileage = self.mileage_manual_entry.get() if self.mileage_manual_entry.get() != "Or type manually" else self.mileage_var.get()
             fuel = self.fuel_manual_entry.get() if self.fuel_manual_entry.get() != "Or type manually" else self.fuel_var.get()
@@ -135,11 +142,11 @@ class FuelTracker:
 
             # Validate inputs
             mileage, fuel, price = float(mileage), float(fuel), float(price)
-            if not date or not station:
-                raise ValueError("Date and Station cannot be empty!")
+            if not date or not station or not customer_name:
+                raise ValueError("Date, Station, and Customer Name cannot be empty!")
 
             # Store entry and station data
-            self.entries.append((date, mileage, fuel, price, station))
+            self.entries.append((customer_name, date, mileage, fuel, price, station))
             self.station_data[station].append(price)
 
             # Save data to file
@@ -147,6 +154,10 @@ class FuelTracker:
 
             # Clear fields
             self.clear_fields()
+
+            # Refresh the View History tab
+            self.load_history()
+
             messagebox.showinfo("Success", "Entry added successfully!")
 
         except ValueError as e:
@@ -154,6 +165,7 @@ class FuelTracker:
 
     def clear_fields(self):
         """Clear all input fields."""
+        self.customer_name_var.set("")
         self.date_dropdown.set("Select Date")
         self.date_manual_entry.delete(0, tk.END)
         self.date_manual_entry.insert(0, "Or type manually")
@@ -191,7 +203,7 @@ class FuelTracker:
         self.notebook.add(self.view_history_tab, text="View History")
 
         # Create Treeview for history
-        columns = ("date", "mileage", "fuel", "price", "station")
+        columns = ("customer_name", "date", "mileage", "fuel", "price", "station")
         self.history_table = ttk.Treeview(
             self.view_history_tab, columns=columns, show="headings", height=20
         )
@@ -199,7 +211,7 @@ class FuelTracker:
 
         # Configure column headings
         for col in columns:
-            self.history_table.heading(col, text=col.capitalize())
+            self.history_table.heading(col, text=col.replace("_", " ").capitalize())
             self.history_table.column(col, anchor="center", width=100)
 
         # Load data into the table
@@ -258,8 +270,8 @@ class FuelTracker:
             if not self.entries:
                 raise ValueError("No entries available!")
 
-            total_mileage = sum(entry[1] for entry in self.entries)
-            total_fuel = sum(entry[2] for entry in self.entries)
+            total_mileage = sum(entry[2] for entry in self.entries)
+            total_fuel = sum(entry[3] for entry in self.entries)
 
             efficiency = total_mileage / total_fuel
             consumption = total_fuel / total_mileage
@@ -288,7 +300,7 @@ class FuelTracker:
             messagebox.showerror("Error", f"Cannot compare stations: {e}")
 
     def view_graphs(self):
-        """Plot graphs of gas station prices."""
+        """Plot graphs of gas station prices."""  
         if not self.enable_graphs.get():
             messagebox.showinfo("Info", "Graph viewing is disabled.")
             return
