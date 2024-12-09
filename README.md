@@ -22,16 +22,16 @@
     <a href="#-project-overview">Project Overview</a>
   </li>
   <li>
-    <a href="#-PYTHON CONCEPTS AND LIBRARIES">PYTHON CONCEPTS AND LIBRARIES</a>
+    <a href="#-PYTHON-CONCEPTS-AND-LIBRARIES">PYTHON CONCEPTS AND LIBRARIES</a>
   </li>
   <li>
-    <a href="#-CHOSEN SDG">CHOSEN SDG</a>
+    <a href="#-CHOSEN-SDG">CHOSEN SDG</a>
   </li>
   <li>
-    <a href="#-INSTRUCTIONS ON HOW TO RUN THE PROGRAM">INSTRUCTIONS ON HOW TO RUN THE PROGRAM</a>
+    <a href="#-INSTRUCTIONS-ON-HOW-TO-RUN-THE-PROGRAM">INSTRUCTIONS ON HOW TO RUN THE PROGRAM</a>
   </li>
    <li>
-    <a href="#-Gratitude Statement">Gratitude Statement</a>
+    <a href="#-Gratitude-Statement">Gratitude Statement</a>
   </li>
 </ul>
 <hr></hr>
