@@ -19,19 +19,19 @@
 <h2>Table of Contents</h2>
 <ul>
   <li>
-    <a href="#project-overview">Project Overview</a>
+    <a href="#project-overview">I. Project Overview</a>
   </li>
   <li>
-    <a href="#python-concepts-and-libraries">Python Concepts and Libraries</a>
+    <a href="#python-concepts-and-libraries">II. Python Concepts and Libraries</a>
   </li>
   <li>
-    <a href="#chosen-sdg">Chosen SDG</a>
+    <a href="#chosen-sdg">III.Chosen SDG</a>
   </li>
   <li>
-    <a href="#instructions-on-how-to-run-the-program">Instructions on How to Run the Program</a>
+    <a href="#instructions-on-how-to-run-the-program">IV. Instructions on How to Run the Program</a>
   </li>
   <li>
-    <a href="#gratitude-statement">Gratitude Statement</a>
+    <a href="#gratitude-statement">V. Gratitude Statement</a>
   </li>
 </ul>
 <hr>
