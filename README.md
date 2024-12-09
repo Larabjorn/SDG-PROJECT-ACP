@@ -16,25 +16,26 @@
   </a>
 </p>
 <hr></hr>
-<h2> TABLE OF CONTENT</h2>
-<ul dir="auto">
+<h2>Table of Contents</h2>
+<ul>
   <li>
-    <a href="#-project-overview">Project Overview</a>
+    <a href="#project-overview">Project Overview</a>
   </li>
   <li>
-    <a href="#i-PYTHON-CONCEPTS-AND-LIBRARIES">PYTHON CONCEPTS AND LIBRARIES</a>
+    <a href="#python-concepts-and-libraries">Python Concepts and Libraries</a>
   </li>
   <li>
-    <a href="#ii-CHOSEN-SDG">CHOSEN SDG</a>
+    <a href="#chosen-sdg">Chosen SDG</a>
   </li>
   <li>
-    <a href="#iii-INSTRUCTIONS-ON-HOW-TO-RUN-THE-PROGRAM">INSTRUCTIONS ON HOW TO RUN THE PROGRAM</a>
+    <a href="#instructions-on-how-to-run-the-program">Instructions on How to Run the Program</a>
   </li>
-   <li>
-    <a href="#iv-Gratitude-Statement">Gratitude Statement</a>
+  <li>
+    <a href="#gratitude-statement">Gratitude Statement</a>
   </li>
 </ul>
-<hr></hr>
+<hr>
+
 
 <div class ="markdown-heading" dir="auto">
   <h2 tabindex="-1" class="heading-element" dir="auto"> PROJECT OVERVIEW</h2>
