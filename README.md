@@ -120,14 +120,18 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <li>    
   <h2>Dropdown Menus and Manual Entry</h2>
         <p>Dropdowns (ttk.Combobox) provide pre-defined options for easier input (e.g., selecting mileage or fuel), while text entries allow flexibility for manual input.</p>
+</li>
+<li>
   <h2>Tab-Based Navigation</h2>
         <p>The ttk.Notebook organizes the app into tabs for logical separation of features:
             <h4>Add Entry Tab</h4> <p>For entering fuel data.</p>
             <h4>Analysis Tab</h4> <p>For toggling features, calculating efficiency, comparing stations, and viewing graphs.</p>
+</li>
  <h2>Buttons</h2>
         <p>Buttons (ttk.Button) trigger specific functions, such as adding entries or calculating fuel efficiency.</p>
 </li>
-
+</ul>
+    
 <div class ="markdown-heading" dir="auto">
   <h2 tabindex="-1" class="heading-element" dir="auto">Persistent Storage with JSON
 </div>
@@ -135,10 +139,13 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <li>
     <h2>Save Functionality</h2> 
         <p>The save_data method converts the entries list  and station_data dictionary into a JSON format and writes it to a file.</p>
+</li>
+<li>
     <h2>Load Functionality</h2> 
   <p>The load_data method reads from the JSON file, ensuring all data is retained between sessions.</p>
 </li>
-  
+</ul>
+    
 <div class ="markdown-heading" dir="auto">
   <h2 tabindex="-1" class="heading-element" dir="auto">Core Functionalities and Their Python Implementation
 </div>
@@ -147,14 +154,21 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
     <h2>Adding Entries</h2>
         <p>User inputs (e.g., date, mileage, fuel) are validated and stored in the entries list.</p>
         <p>The station_data dictionary updates to include fuel prices grouped by station.</p>
+</li>
+<li>
     <h2>Fuel Efficiency Calculation</h2>
         <p>Efficiency is calculated as total mileage / total fuel, and consumption as total fuel / total mileage. These calculations use basic Python arithmetic and list comprehensions.</p>
+</li> 
+<li>
     <h2>Station Comparisons</h2>
         <p>Average fuel prices for each station are computed using Python's sum() and len() functions, and the results are displayed in a messagebox.</p>
+</li>
+<li>
     <h2>Graphing</h2>
         <p>The matplotlib.pyplot module is used to create line plots for station-wise fuel prices, making trends easy to understand.</p>
 </li>
-  
+</ul>
+    
   <div class ="markdown-heading" dir="auto">
   <h2 tabindex="-1" class="heading-element" dir="auto">Error Handling
 </div>
@@ -163,6 +177,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
     <p>Validations prevent invalid inputs, such as empty fields or non-numeric values.</p>
     <p>Friendly error messages are shown via messagebox.showerror.</p>
 </li>
+</ul>
   <div class ="markdown-heading" dir="auto">
   <h2 tabindex="-1" class="heading-element" dir="auto">Flexibility and Extensibility
 </div>
@@ -170,6 +185,8 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <li>
     <p>Feature toggles (Checkbutton with BooleanVar) let users enable or disable analysis features, improving usability.</p>
     <p>New features (e.g., additional graph types or price trend predictions) can be added by expanding the class methods and tabs.</p>
+</li>
+</ul>
     
 <p align="center">
   <img src="https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/images.png">
