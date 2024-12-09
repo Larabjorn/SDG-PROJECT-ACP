@@ -235,26 +235,30 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
   <li>
     <h3> Viewing Fuel History</h3>
       <p>Step 8: The program will also allow the user to view a history of their fuel transactions, including fuel added and fuel consumed.</p>
-    <code>
-      def save_data(self):
-        """Save entries and station data to a JSON file."""
-        with open("fuel_data.json", "w") as f:
-            json.dump({"entries": self.entries, "station_data": self.station_data}, f)
-    </code>
+    <pre>
+      <code>
+        def save_data(self):
+          """Save entries and station data to a JSON file."""
+          with open("fuel_data.json", "w") as f:
+              json.dump({"entries": self.entries, "station_data": self.station_data}, f)
+      </code>
+    </pre>
       <p>Step 9: The user can review the history at any time by selecting the "View History" option from the menu.</p>
-    <code>
-      {"entries": [
-      ["2024-11-24", 50.0, 5.0, 320.0, "Petron"], 
-      ["2024-11-25", 60.0, 3.0, 200.0, "Seaoil"], 
-      ["2024-11-24", 60.0, 9.0, 1000.0, "Phoenix"],
-      ...
-      "station_data": 
-      {"Petron": [320.0, 640.0, 1450.0, 456.0, 2.0, 1.5, 2.25, 1.75], 
-      "Seaoil": [200.0, 623.0], 
-      "Phoenix": [1000.0, 563.0], 
-      "Shell": [200.0, 755.0, 73.0, 453.0, 565.0, 2.5, 1.5, 1.75, 2.5, 1.5, 1.5, 1.5, 1.5], 
-      "Petro Gazz": [546.0]}}
-    </code>
+    <pre>
+      <code>
+        {"entries": [
+        ["2024-11-24", 50.0, 5.0, 320.0, "Petron"], 
+        ["2024-11-25", 60.0, 3.0, 200.0, "Seaoil"], 
+        ["2024-11-24", 60.0, 9.0, 1000.0, "Phoenix"],
+        ...
+        "station_data": 
+        {"Petron": [320.0, 640.0, 1450.0, 456.0, 2.0, 1.5, 2.25, 1.75], 
+        "Seaoil": [200.0, 623.0], 
+        "Phoenix": [1000.0, 563.0], 
+        "Shell": [200.0, 755.0, 73.0, 453.0, 565.0, 2.5, 1.5, 1.75, 2.5, 1.5, 1.5, 1.5, 1.5], 
+        "Petro Gazz": [546.0]}}
+      </code>
+    </pre>
   </li>
 
   <li>
