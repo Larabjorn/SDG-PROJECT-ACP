@@ -1,26 +1,26 @@
-#EcoDrive: Efficient Fuel Management Tool
+# EcoDrive: Efficient Fuel Management Tool
 
 IT-2104
 LARA, BJORN PHILLIPE L.
 
-##PROJECT OVERVIEW
+## PROJECT OVERVIEW
 
-##PYTHON CONCEPTS AND LIBRARIES
+## PYTHON CONCEPTS AND LIBRARIES
 
-##PYTHON LIBRARIES
+## PYTHON LIBRARIES
 
-##GUI FEATURES AND INTERACTIONS
+## GUI FEATURES AND INTERACTIONS
 
-##Persistent Storage with JSON
+## Persistent Storage with JSON
 
-##Core Functionalities and Their Python Implementation
+## Core Functionalities and Their Python Implementation
 
-##Error Handling
+## Error Handling
 
-##Flexibility and Extensibility
+## Flexibility and Extensibility
 
-##Sustainable Development Goals (SDG) Integration in the EcoDrive Project
+## Sustainable Development Goals (SDG) Integration in the EcoDrive Project
 
-##INSTRUCTIONS ON HOW TO RUN THE PROGRAM
+## INSTRUCTIONS ON HOW TO RUN THE PROGRAM
 
-##Gratitude Statement
+## Gratitude Statement
