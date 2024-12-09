@@ -17,13 +17,13 @@
 </p>
 <hr></hr>
 <h2>TABLE OF CONTENT</h2>
-[PROJECT OVERVIEW](#PROJECT OVERVIEW)
-[PYTHON CONCEPTS AND LIBRARIES](#PYTHON CONCEPTS AND LIBRARIES)
-[Python Libraries](#Python Libraries)
-[GUI Features and Interactions](#GUI Features and Interactions)
-[SDG 12: Responsible Consumption and Production](#SDG 12: Responsible Consumption and Production)
-[INSTRUCTIONS ON HOW TO RUN THE PROGRAM](#INSTRUCTIONS ON HOW TO RUN THE PROGRAM)
-[Gratitude Statement](#Gratitude Statement)
+  [PROJECT OVERVIEW](#PROJECT OVERVIEW)
+  [PYTHON CONCEPTS AND LIBRARIES](#PYTHON CONCEPTS AND LIBRARIES)
+  [Python Libraries](#Python Libraries)
+  [GUI Features and Interactions](#GUI Features and Interactions)
+  [SDG 12: Responsible Consumption and Production](#SDG 12: Responsible Consumption and Production)
+  [INSTRUCTIONS ON HOW TO RUN THE PROGRAM](#INSTRUCTIONS ON HOW TO RUN THE PROGRAM)
+  [Gratitude Statement](#Gratitude Statement)
 
 
 ## PROJECT OVERVIEW
