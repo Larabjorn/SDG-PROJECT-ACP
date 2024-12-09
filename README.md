@@ -2,10 +2,29 @@
   <img src="https://github.com/Larabjorn/SDG-PROJECT-ACP/blob/main/ECO.png" width="350">
 </p>
 
-# EcoDrive: Efficient Fuel Management Tool
+<h1 align = "center" tabindex="-1" class= "heading element" dir+"auto"> EcoDrive</h1>
+<p align = " center" dir= "auto">
+  <em>
+    <code> : Efficient Fuel Management Tool</code>
+  </em>
+</p>
+<p align = "center" dir="auto">
+  <b>IT-2104</b>
+  <br>
+  <a href="https://github.com/Larabjorn">
+  LARA, BJORN PHILLIPE L.
+  </a>
+</p>
+<hr></hr>
+<h2>TABLE OF CONTENT</h2>
+[PROJECT OVERVIEW](#PROJECT OVERVIEW)
+[PYTHON CONCEPTS AND LIBRARIES](#PYTHON CONCEPTS AND LIBRARIES)
+[Python Libraries](#Python Libraries)
+[GUI Features and Interactions](#GUI Features and Interactions)
+[SDG 12: Responsible Consumption and Production](#SDG 12: Responsible Consumption and Production)
+[INSTRUCTIONS ON HOW TO RUN THE PROGRAM](#INSTRUCTIONS ON HOW TO RUN THE PROGRAM)
+[Gratitude Statement](#Gratitude Statement)
 
-IT-2104
-LARA, BJORN PHILLIPE L.
 
 ## PROJECT OVERVIEW
 
@@ -38,8 +57,9 @@ Exception Handling
 tkinter
         Used to create the graphical user interface (GUI). It manages components like labels, buttons, and dropdowns.
 Widgets Used:
-            ttk.Entry, ttk.Combobox, ttk.Button, and ttk.Checkbutton handle user input.
-            ttk.Notebook organizes the interface into tabs (e.g., "Add Entry" and "Analysis").
+  ttk.Entry, ttk.Combobox, ttk.Button, and ttk.Checkbutton handle user input.
+            
+  ttk.Notebook organizes the interface into tabs (e.g., "Add Entry" and "Analysis").
             Grid Layout: Ensures the layout is responsive and centered.
 Matplotlib
         This library is used to create graphs for visualizing fuel prices by station.
