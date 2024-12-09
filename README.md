@@ -45,7 +45,7 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 <hr></hr>
 
 <div class ="markdown-heading" dir="auto">
-  <h2 tabindex="-1" class="heading-element" dir="auto">PYTHON CONCEPTS AND LIBRARIES
+  <h2 tabindex="-2" class="heading-element" dir="auto">PYTHON CONCEPTS AND LIBRARIES
 </div>
 <ul dir="auto">
   <li>
