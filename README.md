@@ -115,39 +115,6 @@ EcoDrive: Efficient Fuel Management Tool is a comprehensive Python-based applica
 </ul>
 
 <div class ="markdown-heading" dir="auto">
-  <h2 tabindex="-1" class="heading-element" dir="auto">GUI Features and Interactions
-</div>
-<ul dir="auto">
-<li>    
-  <h2>Dropdown Menus and Manual Entry</h2>
-        <p>Dropdowns (<code>ttk.Combobox</code>) provide pre-defined options for easier input (e.g., selecting mileage or fuel), while text entries allow flexibility for manual input.</p>
-</li>
-<li>
-  <h2>Tab-Based Navigation</h2>
-        <p>The <code>ttk.Notebook organizes</code> the app into tabs for logical separation of features:
-            <h4>Add Entry Tab</h4> <p>For entering fuel data.</p>
-            <h4>Analysis Tab</h4> <p>For toggling features, calculating efficiency, comparing stations, and viewing graphs.</p>
-</li>
- <h2>Buttons</h2>
-        <p>Buttons (<code>ttk.Button</code>) trigger specific functions, such as adding entries or calculating fuel efficiency.</p>
-</li>
-</ul>
-    
-<div class ="markdown-heading" dir="auto">
-  <h2 tabindex="-1" class="heading-element" dir="auto">Persistent Storage with JSON
-</div>
-<ul dir="auto">
-<li>
-    <h2>Save Functionality</h2> 
-        <p>The <code>save_data</code> method converts the <code>entries</code> list and <code>station_data</code> dictionary into a JSON format and writes it to a file.</p>
-</li>
-<li>
-    <h2>Load Functionality</h2> 
-  <p>The <code>load_data</code> method reads from the JSON file, ensuring all data is retained between sessions.</p>
-</li>
-</ul>
-    
-<div class ="markdown-heading" dir="auto">
   <h2 tabindex="-1" class="heading-element" dir="auto">Core Functionalities and Their Python Implementation
 </div>
 <ul dir="auto">
