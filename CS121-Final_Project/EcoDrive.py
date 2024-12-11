@@ -13,23 +13,18 @@ class FuelTracker:
         self.root.geometry("800x600")
         self.root.resizable(True, True)
 
-        # Data storage
         self.entries = []
         self.station_data = defaultdict(list)
-
-        # Feature toggles
+        
         self.enable_efficiency = tk.BooleanVar(value=True)
         self.enable_comparison = tk.BooleanVar(value=True)
         self.enable_graphs = tk.BooleanVar(value=True)
 
-        # Load data from file
         self.load_data()
 
-        # Notebook for tabs
         self.notebook = ttk.Notebook(self.root)
         self.notebook.pack(fill="both", expand=True)
 
-        # Add tabs
         self.create_add_entry_tab()
         self.create_analysis_tab()
         self.create_view_history_tab()  # Add the view history tab here
@@ -38,8 +33,7 @@ class FuelTracker:
         """Create the Add Entry tab."""
         self.add_entry_tab = ttk.Frame(self.notebook)
         self.notebook.add(self.add_entry_tab, text="Add Entry")
-        
-        # Center the form using grid layout
+
         self.add_entry_tab.grid_rowconfigure(0, weight=1)
         self.add_entry_tab.grid_rowconfigure(2, weight=1)
         self.add_entry_tab.grid_columnconfigure(0, weight=1)
@@ -132,7 +126,6 @@ class FuelTracker:
     def add_entry(self):
         """Add a new fuel entry."""
         try:
-            # Get data from fields or dropdowns
             customer_name = self.customer_name_var.get()
             date = self.date_manual_entry.get() if self.date_manual_entry.get() != "Or type manually" else self.date_var.get()
             mileage = self.mileage_manual_entry.get() if self.mileage_manual_entry.get() != "Or type manually" else self.mileage_var.get()
@@ -140,22 +133,17 @@ class FuelTracker:
             price = self.price_var.get()
             station = self.station_manual_entry.get() if self.station_manual_entry.get() != "Or type manually" else self.station_var.get()
 
-            # Validate inputs
             mileage, fuel, price = float(mileage), float(fuel), float(price)
             if not date or not station or not customer_name:
                 raise ValueError("Date, Station, and Customer Name cannot be empty!")
 
-            # Store entry and station data
             self.entries.append((customer_name, date, mileage, fuel, price, station))
             self.station_data[station].append(price)
 
-            # Save data to file
             self.save_data()
 
-            # Clear fields
             self.clear_fields()
 
-            # Refresh the View History tab
             self.load_history()
 
             messagebox.showinfo("Success", "Entry added successfully!")
@@ -202,33 +190,27 @@ class FuelTracker:
         self.view_history_tab = ttk.Frame(self.notebook)
         self.notebook.add(self.view_history_tab, text="View History")
 
-        # Create Treeview for history
         columns = ("customer_name", "date", "mileage", "fuel", "price", "station")
         self.history_table = ttk.Treeview(
             self.view_history_tab, columns=columns, show="headings", height=20
         )
         self.history_table.grid(row=0, column=0, padx=10, pady=10, sticky="nsew")
 
-        # Configure column headings
         for col in columns:
             self.history_table.heading(col, text=col.replace("_", " ").capitalize())
             self.history_table.column(col, anchor="center", width=100)
 
-        # Load data into the table
         self.load_history()
 
-        # Add scrollbar
         scrollbar = ttk.Scrollbar(self.view_history_tab, orient="vertical", command=self.history_table.yview)
         self.history_table.configure(yscroll=scrollbar.set)
         scrollbar.grid(row=0, column=1, sticky="ns")
 
     def load_history(self):
         """Load all saved entries into the history table."""
-        # Clear existing rows
         for row in self.history_table.get_children():
             self.history_table.delete(row)
 
-        # Add rows to the table
         for entry in self.entries:
             self.history_table.insert("", "end", values=entry)
 
@@ -237,7 +219,6 @@ class FuelTracker:
         self.analysis_tab = ttk.Frame(self.notebook)
         self.notebook.add(self.analysis_tab, text="Analysis")
 
-        # Center the analysis content
         self.analysis_tab.grid_rowconfigure(0, weight=1)
         self.analysis_tab.grid_rowconfigure(2, weight=1)
         self.analysis_tab.grid_columnconfigure(0, weight=1)
@@ -246,7 +227,6 @@ class FuelTracker:
         analysis_frame = ttk.Frame(self.analysis_tab)
         analysis_frame.grid(row=1, column=1, padx=20, pady=20)
 
-        # Feature toggles
         ttk.Checkbutton(analysis_frame, text="Enable Efficiency Calculation", variable=self.enable_efficiency).grid(row=0, column=0, columnspan=2, sticky="w", pady=5)
         ttk.Checkbutton(analysis_frame, text="Enable Station Comparison", variable=self.enable_comparison).grid(row=1, column=0, columnspan=2, sticky="w", pady=5)
         ttk.Checkbutton(analysis_frame, text="Enable Graphs", variable=self.enable_graphs).grid(row=2, column=0, columnspan=2, sticky="w", pady=5)
