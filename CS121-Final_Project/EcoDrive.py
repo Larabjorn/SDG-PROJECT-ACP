@@ -27,7 +27,7 @@ class FuelTracker:
 
         self.create_add_entry_tab()
         self.create_analysis_tab()
-        self.create_view_history_tab()  # Add the view history tab here
+        self.create_view_history_tab()
 
     def create_add_entry_tab(self):
         """Create the Add Entry tab."""
